@@ -18,21 +18,13 @@ def preguntar_numero(param_intento, param_valor):
                     if valorentero < 99:
                         param_valor[3]=0    
                     if valorentero < 9:
-                        param_valor[4]=0 
-                    
+                        param_valor[4]=0                     
                     for i in range(5, 5-len(valor), -1):
-                    # print(str(i))
-                    # print(str( i-5 + len(valor)))
                         param_valor[i] = int(valor[i-6 + len(valor)])
-                # print(param_valor)            
-                        #  for i in range(0, len(valor)):
-                    #  print(valor[i])
-                    #  param_valor[i]=int(valor[i])
-                    #param_intento=True
-                # print(str(len(valor)))
+                    param_intento=True
             except ValueError:
                 print("ATENCIÓN: Debe ingresar un cifra de valor  entero.")
-  #  print(param_valor)        
+#    print(param_valor)        
  
 if __name__ == "__main__":
     preguntar_numero(False,[0, 0, 0, 0, 0, 0])
