@@ -15,7 +15,7 @@ intentos = []
 diccionario_unidades = {"centena_mil" : 0, "decena_mil" : 0, "unidad_mil" : 0, "centena" : 0, "decena" : 0, "unidad" : 0}
 
 while not intento:
-    #Ingresa_Dato(intento, valor)   CHRISTIAN
+    Ingresa_Dato(intento, valor)   CHRISTIAN
     if not intento:
         break
     else:
