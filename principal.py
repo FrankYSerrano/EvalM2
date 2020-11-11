@@ -27,7 +27,7 @@ while not intento:
 #    print(intentos)
 #    print(valorL)
     p.agrega_diccionario(valorL, diccionario_unidades)
-#    Mostrar_Abaco(diccionario_unidades)    GUIDO
+    p.mostrar_abaco(diccionario_unidades)
     print("abaco")
 
 print("Los ingresos fueron: " + str(intentos))
