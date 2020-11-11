@@ -1,15 +1,12 @@
-def fr_1(param_valor, param_diccionario_unidades):
-    c=a+b
-    return c
-
-    valor = [0, 0, 3, 0, 6, 0]
-    param_diccionario_unidades = {"centena_mil" : 0,
-                                 "decena_mil" : 0,
-                                 "unidad_mil" : 3,
-                                 "centena" : 0,
-                                 "decena" : 6,
-                                 "unidad" : 0}
-
+def agrega_diccionario(param_valor,diccionario):
+    diccionario ["unidad"] = param_valor[5]
+    diccionario ["decena"] = param_valor[4]
+    diccionario ["centena"] = param_valor[3]
+    diccionario ["unidad_mil"] = param_valor[2]
+    diccionario ["decena_mil"] = param_valor[1]
+    diccionario ["centena_mil"] = param_valor[0]
+#    print(diccionario)
 
 if __name__ == "__main__":
-    print(str(fr_1(2,3)))
+    agrega_diccionario([6, 5, 4, 3, 2, 1], {"centena_mil":0, "decena_mil":0, "unidad_mil":0, "centena":0, "decena":0, "unidad":0})
+

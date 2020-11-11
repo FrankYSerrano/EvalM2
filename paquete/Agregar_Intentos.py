@@ -16,9 +16,11 @@ def agrega_intentos(param_intentos, param_valor):
 #    print(param_intentos)
 
 if __name__ == "__main__":
+    agrega_intentos([], [0,0,0,0,0,0])
     agrega_intentos(['4.000'], [0,0,0,0,0,0])
     agrega_intentos(['4.000'], [0,0,0,0,2,0])
     agrega_intentos(['4.000'], [0,0,0,3,0,0])
     agrega_intentos(['4.000'], [0,0,4,0,0,0])
     agrega_intentos(['4.000'], [0,5,0,0,0,0])
     agrega_intentos(['4.000'], [6,0,0,0,0,0])
+    agrega_intentos(['4.000'], [1,2,3,4,5,6])
