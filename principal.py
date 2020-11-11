@@ -16,26 +16,18 @@ intentos = []
 #VARIABLE QUE SERVIRA PARA ALMACENAR LA CANTIDAD DE CADA UNIDAD DE DESCOMPOSICION
 diccionario_unidades = {"centena_mil" : 0, "decena_mil" : 0, "unidad_mil" : 0, "centena" : 0, "decena" : 0, "unidad" : 0}
 
+#CICLO PARA INGRESAR VALORES VALIDOS (SOLO NUMEROS!) o SALIR
 while intento:
-#    print(valorL)
-#    print("ID: " + str(id(intento)))
-#    print("ID: " + str(id(valorL)))
-#    intento = p.preguntar_numero(intento, valorL)
+    #LLAMADO A FUNCION QUE SOLICITA IMPUT AL USUARIO
     intento, valorL = p.preguntar_numero(intento, valorL)
-#    print("Variable BOOLEANA de control de ciclo principal al salir de Funcion " + str(intento))        
-#    if not intento:
-#        print("CHAO PESCAO!!!!")
-#        break
+    #SI EL USUARIO INTRODUJO SALIR intento SERA FALSE DE LO CONTRARIO PROSIGUE A DIBUJAR EL ABACO Y REPREGUNTAR
     if intento:
-        print(valorL)
+        #FUNCION QUE REGISTRA EN LISTA DE POSIBLES VALORES EL VALOR INGRESADO
         intentos, valorL = p.agrega_intentos(intentos, valorL)
-    #    print(intentos)
-    #    print(valorL)
+        #FUNCION QUE LLENA EL DICCIONARIO CON LOS VALORES INGRESADOS
         valorL, diccionario_unidades = p.agrega_diccionario(valorL, diccionario_unidades)
+        #FUNCION QUE DIBUJA EL ABACO
         diccionario_unidades = p.mostrar_abaco(diccionario_unidades)
-    #    print("abaco")
-    #    if p.salir() == False:
-    #        break
 
 print("Los ingresos fueron: " + str(intentos))
 print("FIN")
