@@ -26,6 +26,7 @@ while intento:
 #    if not intento:
 #        break
 #    else:
+    p.agrega_diccionario(valorL, diccionario_unidades)
         #Descomponer_En_Diccionario(valor, diccionario_unidades)    FERNANDO
         #Mostrar_Abaco(diccionario_unidades)    GUIDO
     print("abaco y diccionario")
