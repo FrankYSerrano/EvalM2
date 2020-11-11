@@ -1,17 +1,17 @@
-def preguntar_numero(param_intento, param_valor):
-    control = True
-    while control:
-        valor = input("Ingrese un número entero: ")
-        if valor.upper() == "SALIR":
-            param_intento=True
-            control = False
-#            break 
+ #funcion que valida el dato ingresado en el menu principal:validacion de ingreso o sale del programa, 
+ # velidacion de numero que no se ingrese palabras y validacion de numero entero.
+
+def preguntar_numero(param_intento, param_valor): 
+       while not param_intento: # loop que valida si sigue o sale del programa
+        valor = input("Ingrese un número entero: ")  
+        if valor.upper() == "SALIR":                 #valida que lo ingresado es numero y no letra
+            break                                   
         else:   
             try:
-                valorentero=int(valor)
+                valorentero=int(valor)                #validador que lo ingresado es un numero entero
                 if valorentero > 999999:
-                    print(" el numero se pasa de los parametros")
-                else:  
+                    print(" el numero se pasa de los parametros") # restringido para que se ingresen cifras menores que 
+                else:                                             # 999.999
                     if valorentero < 99999:
                         param_valor[0]=0
                     if valorentero < 9999:
@@ -21,14 +21,13 @@ def preguntar_numero(param_intento, param_valor):
                     if valorentero < 99:
                         param_valor[3]=0    
                     if valorentero < 9:
-                        param_valor[4]=0                     
-                    for i in range(5, 5-len(valor), -1):
-                        param_valor[i] = int(valor[i-6 + len(valor)])
-                    control=False
-            except ValueError:
-                print("ATENCIÓN: Debe ingresar un cifra de valor  entero.")
-#    print("Lista al  salir de Funcion " + str(param_valor))   
-    print("Variable BOOLEANA de control de ciclo principal al salir de Funcion " + str(param_intento))        
- 
+
+                        param_valor[4]=0    
+
+                    for i in range(5, 5-len(valor), -1):               # funcion que sirve para recorrer la lista y           
+                        param_valor[i] = int(valor[i-6 + len(valor)])  # dejarala en orden ademas de colocar cero en el inicio de la cifra 
+            except ValueError:                                         # para lograr las cantidades de fichas              
+                print("ATENCIÓN: Debe ingresar un cifra de valor  entero.")        
 if __name__ == "__main__":
     preguntar_numero(False,[0, 0, 0, 0, 0, 0])
+    
