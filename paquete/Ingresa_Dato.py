@@ -1,8 +1,11 @@
 def preguntar_numero(param_intento, param_valor):
-    while not param_intento:
+    control = True
+    while control:
         valor = input("Ingrese un número entero: ")
         if valor.upper() == "SALIR":
-            break 
+            param_intento=True
+            control = False
+#            break 
         else:   
             try:
                 valorentero=int(valor)
@@ -21,10 +24,11 @@ def preguntar_numero(param_intento, param_valor):
                         param_valor[4]=0                     
                     for i in range(5, 5-len(valor), -1):
                         param_valor[i] = int(valor[i-6 + len(valor)])
-                    param_intento=True
+                    control=False
             except ValueError:
                 print("ATENCIÓN: Debe ingresar un cifra de valor  entero.")
-#    print(param_valor)        
+#    print("Lista al  salir de Funcion " + str(param_valor))   
+    print("Variable BOOLEANA de control de ciclo principal al salir de Funcion " + str(param_intento))        
  
 if __name__ == "__main__":
     preguntar_numero(False,[0, 0, 0, 0, 0, 0])
