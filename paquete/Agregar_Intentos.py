@@ -14,6 +14,7 @@ def agrega_intentos(param_intentos, param_valor):
         cadena_caracteres = str(int(cadena_caracteres[3:6]))
     param_intentos.append(cadena_caracteres)
 #    print(param_intentos)
+    return param_intentos, param_valor
 
 if __name__ == "__main__":
     agrega_intentos([], [0,0,0,0,0,0])

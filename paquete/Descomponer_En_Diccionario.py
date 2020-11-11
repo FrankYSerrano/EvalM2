@@ -6,6 +6,7 @@ def agrega_diccionario(param_valor,diccionario):
     diccionario ["decena_mil"] = param_valor[1]
     diccionario ["centena_mil"] = param_valor[0]
 #    print(diccionario)
+    return param_valor, diccionario
 
 if __name__ == "__main__":
     agrega_diccionario([6, 5, 4, 3, 2, 1], {"centena_mil":0, "decena_mil":0, "unidad_mil":0, "centena":0, "decena":0, "unidad":0})
