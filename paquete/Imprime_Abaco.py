@@ -1,5 +1,4 @@
-
-
+# FUNCION QUE RECIBE EL DICCIONARIO Y LO IMPRIME
 
 def mostrar_abaco(abaco):
     cm = [' | |',' | |',' | |',' | |',' | |',' | |',' | |',' | |',' | |',]
@@ -9,26 +8,24 @@ def mostrar_abaco(abaco):
     d = [' | |',' | |',' | |',' | |',' | |',' | |',' | |',' | |',' | |',]
     u = [' | |',' | |',' | |',' | |',' | |',' | |',' | |',' | |',' | |',]
 
+    #LISTA QUE SE LLENA HASTA LA UNIDAD DE CENTENA DE MIL RECIBIDA DEL DICCIONARIO
     for i in range(0,abaco ["centena_mil"]): 
         cm [i] = 'XXXX'
-
+    #LISTA QUE SE LLENA HASTA LA UNIDAD DE DECENA DE MIL RECIBIDA DEL DICCIONARIO
     for i in range(0,abaco ["decena_mil"]): 
         dm [i] = 'XXXX'
-    
+    #LISTA QUE SE LLENA HASTA LA UNIDAD DE UNIDAD DE MIL RECIBIDA DEL DICCIONARIO
     for i in range(0,abaco ["unidad_mil"]): 
         m [i] = 'XXXX'
-
+    #LISTA QUE SE LLENA HASTA LA UNIDAD DE CENTENA DE MIL RECIBIDA DEL DICCIONARIO
     for i in range(0,abaco ["centena"]): 
         c [i] = 'XXXX'
-
+    #LISTA QUE SE LLENA HASTA LA UNIDAD DE DECENA DE MIL RECIBIDA DEL DICCIONARIO
     for i in range(0,abaco ["decena"]): 
         d [i] = 'XXXX'
-
+    #LISTA QUE SE LLENA HASTA LA UNIDAD DE UNIDAD DE MIL RECIBIDA DEL DICCIONARIO
     for i in range(0,abaco ["unidad"]): 
         u [i] = 'XXXX'
-
-
-
    
     print()
     print()    

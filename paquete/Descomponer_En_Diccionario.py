@@ -1,3 +1,5 @@
+# FUNCION QUE RECIBE UNA LISTA Y LA TRASPASA A UNA VARIABLE DE TIPO DICCIONARIO
+
 def agrega_diccionario(param_valor,diccionario):
     diccionario ["unidad"] = param_valor[5]
     diccionario ["decena"] = param_valor[4]
