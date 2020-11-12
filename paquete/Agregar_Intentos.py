@@ -1,3 +1,6 @@
+# FUNCION QUE RECIBE LA LISTA DE VALORES ENTREGADOS Y LOS RECONSTRUYE EN UN STRING AGREGANDO
+# EL SEPARADOR DE MILES (".") EN CASO DE SER NECESARIO
+
 def agrega_intentos(param_intentos, param_valor):
     #Variable para almacenar la conversion de lista a String
     cadena_caracteres =""
